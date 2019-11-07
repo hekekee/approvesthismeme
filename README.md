@@ -7,6 +7,6 @@ Preferably host the images at [Imgur](https://imgur.com/)
 
 ## Rules
 
-- NSFW memes only
+- SFW memes only
 - please no breaking the site
 - maximum resolution 1024x1024 or **rejected pull request** >:( *angery*
