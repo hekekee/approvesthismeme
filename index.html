@@ -9,18 +9,52 @@
       max-height: 1024px;
       max-width: 1024px;
     }
+    .toggle-dark:checked ~ div{
+      color: white;
+      background-color: black;
+    }
+    .toggle-dark {
+      position: absolute;
+      right: 50px;
+      z-index: 42069;
+    }
+    .toggle-dark::before {
+      content: 'Darkmode: ';
+      position: relative;
+      right: 70px;
+    }
+    .toggle-dark:checked::before {
+      content: 'Lightmode: ';
+      color: white;
+      position: relative;
+      right: 70px;
+    }
+    .content {
+      min-height: 100vh;
+      min-width: 100vw;
+      top: -16px;
+      right: 0px;
+      position: relative;
+      padding: 8px;
+    }
+    body {
+      margin: 0px;
+    }
   </style>
 </head>
 <body>
-  <p>Very nice meme, heikki approves!</p>
-  <p></p>
-  <p>Some other approved memes</p>
-  <img src="https://images-cdn.9gag.com/photo/a1Q3Gxv_460s.jpg" />
-  <p></p> 
-  <img src="https://i.imgur.com/bwYtW2J.gif" />
-  <p></p>
-  <img src="https://i.imgur.com/uaxZq55.png" />
-  <p> thanks <a href="https://twitter.com/jonihasanen">@jonihasanen</a> for this meme, thanks <a href="https://twitter.com/JoakimTauren">@JoakimTauren</a> for this request via TWITTER >:(</p>
-  <p></p>
-  <img src="https://i.imgur.com/DfmOffb.png"/>
+  <input type="checkbox" class="toggle-dark" id="darkmode" />
+  <div class="content">
+      <p>Very nice meme, heikki approves!</p>
+      <p></p>
+      <p>Some other approved memes</p>
+      <img src="https://images-cdn.9gag.com/photo/a1Q3Gxv_460s.jpg" />
+      <p></p> 
+      <img src="https://i.imgur.com/bwYtW2J.gif" />
+      <p></p>
+      <img src="https://i.imgur.com/uaxZq55.png" />
+      <p> thanks <a href="https://twitter.com/jonihasanen">@jonihasanen</a> for this meme, thanks <a href="https://twitter.com/JoakimTauren">@JoakimTauren</a> for this request via TWITTER >:(</p>
+      <p></p>
+      <img src="https://i.imgur.com/DfmOffb.png"/>
+  </div>
 </html>
