@@ -1,13 +1,77 @@
-// FEED ME YOUR BEST CSS STYLES THANKS <3
+/* FEED ME YOUR BEST CSS STYLES THANKS <3 */
 
 .titanic {
- float: none; 
+    float: none;
 }
 
 .weird {
- display: flex; 
+    display: flex;
 }
 
 .kek {
- top: 0;
+    top: 0;
+}
+
+img {
+    display: block;
+    height: 400px;
+    width: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .meme>img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.toggle-dark:checked~div {
+    color: white;
+    background-color: black;
+}
+
+.toggle-dark {
+    position: absolute;
+    right: 50px;
+    z-index: 42069;
+}
+
+.toggle-dark::before {
+    content: 'Darkmode: ';
+    position: relative;
+    right: 70px;
+}
+
+.toggle-dark:checked::before {
+    content: 'Lightmode: ';
+    color: white;
+    position: relative;
+    right: 70px;
+}
+
+.content {
+    min-height: 100%;
+    top: -16px;
+    right: 0px;
+    padding: 8px;
+    position: absolute;
+}
+
+.memebox {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.meme {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 20px;
+}
+
+body,
+html {
+    margin: 0px;
+    height: 100%
 }
