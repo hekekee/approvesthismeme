@@ -1,67 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <style>
-    img {
-      max-height: 1024px;
-      max-width: 1024px;
-    }
-    .toggle-dark:checked ~ div{
-      color: white;
-      background-color: black;
-    }
-    .toggle-dark {
-      position: absolute;
-      right: 50px;
-      z-index: 42069;
-    }
-    .toggle-dark::before {
-      content: 'Darkmode: ';
-      position: relative;
-      right: 70px;
-    }
-    .toggle-dark:checked::before {
-      content: 'Lightmode: ';
-      color: white;
-      position: relative;
-      right: 70px;
-    }
-    .content {
-      min-height: 100vh;
-      min-width: 96vw;
-      top: -16px;
-      right: 0px;
-      position: relative;
-      padding: 8px;
-    }
-    body {
-      margin: 0px;
-    }
-    @media screen and (max-width: 1024px) {
-      img {
-        max-height: 100%;
-        max-width: 100%;
-      }
-    }
-  </style>
 </head>
+
 <body>
   <input type="checkbox" class="toggle-dark" id="darkmode" checked />
   <p style="color: #000;position: absolute;top: 30px;right: 0;">HÄHÄ LIGHT MODE :DDD</p>
   <div class="content">
-      <p>Very nice meme, heikki approves!</p>
-      <p></p>
-      <p>Some other approved memes</p>
-      <img src="https://images-cdn.9gag.com/photo/a1Q3Gxv_460s.jpg" />
-      <p></p> 
-      <img src="https://i.imgur.com/bwYtW2J.gif" />
-      <p></p>
-      <img src="https://i.imgur.com/uaxZq55.png" />
-      <p> thanks <a href="https://twitter.com/jonihasanen">@jonihasanen</a> for this meme, thanks <a href="https://twitter.com/JoakimTauren">@JoakimTauren</a> for this request via TWITTER >:(</p>
-      <p></p>
-      <img src="https://i.imgur.com/DfmOffb.png"/>
+    <p>Very nice meme, heikki approves!</p>
+    <p></p>
+    <p>Some other approved memes</p>
+    <div class="memebox">
+      <div class="meme">
+        <img src="https://images-cdn.9gag.com/photo/a1Q3Gxv_460s.jpg" />
+      </div>
+      <div class="meme">
+        <img src="https://i.imgur.com/bwYtW2J.gif" />
+      </div>
+      <div class="meme">
+        <img src="https://i.imgur.com/uaxZq55.png" />
+        <span>thanks <a href="https://twitter.com/jonihasanen">@jonihasanen</a> for this meme, thanks <a
+            href="https://twitter.com/JoakimTauren">@JoakimTauren</a> for this request via TWITTER >:(</span>
+      </div>
+      <div class="meme">
+        <img src="https://i.imgur.com/DfmOffb.png" />
+      </div>
+      <div class="meme">
+        <img src="https://i.imgur.com/hbRL3lG.jpg" alt="">
+      </div>
+    </div>
   </div>
+
 </html>
